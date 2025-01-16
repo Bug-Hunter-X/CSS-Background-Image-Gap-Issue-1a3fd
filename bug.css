@@ -1,0 +1,9 @@
+The following CSS rule applies a background image to an element, but it fails to properly cover the entire element, resulting in a visible gap between the background image and the element's edges.
+
+```css
+div {
+  background-image: url('image.jpg');
+}
+```
+
+The problem arises because the default behavior of `background-size` is `auto`, which might not scale the image proportionally to fill the element's dimensions if the image's aspect ratio differs from the element's aspect ratio.
